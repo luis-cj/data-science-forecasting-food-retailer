@@ -173,8 +173,5 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-#GIFs
-*.gif
-
 #Database files
 *.db
