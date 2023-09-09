@@ -23,8 +23,29 @@ As a starting point, a SQL database is provided containing 3 years of selling re
 Develope a multi-step forecasting Machine Learning model that can predict sales for each product on each store within the next following 8 days from the data collection.
 
 
-### 2. Data cleaning process
+### 2. Data collection and setup
 
+Data is provided in a SQL database provided by the business owners.
+
+Three different datasets are provided, corresponding to:
+
+- Calendar
+
+- Sales
+
+- Prices
+
+All of the datasets are joined as it is shown in the following Jupyter notebook:
+
+[Data setup](https://github.com/luis-cj/data-science-british-airways/blob/main/1_Task2_data_cleaning.ipynb)
+
+### 3. Data cleaning
+
+This part involves checking data types and general data quality. The main steps in this phase are cleaning and processing data from missing values and outliers that the original dataset may contain.
+
+Data cleaning can be checked in the following Jupyter Notebook:
+
+Data cleaning NOTEBOOK
 
 ### 3. Exploratory Data Analysis (EDA)
 
