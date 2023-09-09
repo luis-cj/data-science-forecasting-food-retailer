@@ -11,7 +11,7 @@ A large grocery chain wants to forecast the sales of 10 food products, sold in 2
 The business managers have outsourced this project to a data scientist to deliver a machine learning product able to be run in batch mode. In this way the model can be reused at any time in the future and thus keep adding value to the business.
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/luis-cj/data-science-retail-market-madrid/blob/main/images/madrid.gif">
+  <img width="480" height="270" src="https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/images/grocery_store_gif.gif">
 </p>
 
 As a starting point, a SQL database is provided containing 3 years of selling records for each product and store.
