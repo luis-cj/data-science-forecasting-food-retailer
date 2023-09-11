@@ -21,8 +21,7 @@ It is required to deliver a final product to the business owners that is capable
 
 This methodology and all the steps involved in it are run in Python Jupyter Notebooks. Then, the final product is the summary of all the necessary steps in a single Python Script ready to be thrown into production mode for further explotation of the ML model.
 
-These steps are defined under this section with the link to their respectives Jupyter Notebooks
-
+These steps are defined under this section with the link to their respectives Jupyter Notebooks.
 
 
 ### 1. Objectives
@@ -60,13 +59,18 @@ Data cleaning NOTEBOOK
 ### 4. Feature Engineering
 
 
-### 5. Model development
+### 5. Feature selection
 
 
-### 6. Analysis and insights
+### 6. Model development and evaluation
 
 
-### 7. Communication
+### 7. Prepare production scripts
+
+
+### 8. Final product 
 
 
 ## BONUS: Lessons learnt
+
+
