@@ -44,7 +44,7 @@ Three different datasets are provided, corresponding to:
 
 All of the datasets are joined as it is shown in the following Jupyter notebook:
 
-[Data setup](https://github.com/luis-cj/data-science-british-airways/blob/main/1_Task2_data_cleaning.ipynb)
+[Data setup](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/notebooks/01_DataCollection_Setup.ipynb)
 
 ### 3. Data cleaning
 
