@@ -1,9 +1,9 @@
 # Data science project: Forecasting Food Retailer
 Data science project to forecast retail sales from a large grocery chain using a multi-step forecasting Machine Learning algorithm.
 
-This is a **Machine Learning (ML) project**, where the main goal is to develope a machine learning model able to run in batch mode, API or Web App for further model explotation in a real business scenario. It includes data cleaning process, exploratory data analysis, feature engineering, ML modeling and retraining and deployment code.
+This is a **Machine Learning (ML) project**, where the main goal is to develope a machine learning model able to run in batch mode, API or web app for further model explotation in a real business scenario. It includes data cleaning process, exploratory data analysis, feature engineering, ML modeling and retraining and deployment code.
 
-All the project is carried out using Jupyter Notebooks and Python scripts.
+All the project is carried out using Python Jupyter Notebooks and Python scripts.
 
 ## Context
 A large grocery chain wants to forecast the sales of 10 food products, sold in 2 of their stores. In order for them to provide the most value, they would like to have a forecast of their sales 8 days in advance, so they can avoid shortage of products and reduce operative costs in their stores.
@@ -21,8 +21,9 @@ It is required to deliver a final product to the business owners that is capable
 
 This methodology and all the steps involved in it are run in Python Jupyter Notebooks. Then, the final product is the summary of all the necessary steps in a single Python Script ready to be thrown into production mode for further explotation of the ML model.
 
-These steps are defined under this section with the link to their respectives Jupyter Notebooks.
+These steps are defined under this section with the link to their respective Python Jupyter Notebooks.
 
+<!-- I would like to add at some point if I have time some definition of forecasting and specifically multi-step recursive forecasting. Mention big data modeling capabilities. -->
 
 ### 1. Objectives
 
@@ -55,21 +56,47 @@ Data cleaning NOTEBOOK
 
 ### 3. Exploratory Data Analysis (EDA)
 
+A statistical and graphical analysis of the data allows further understanding of the data and the business problem.
+
+EDA can be checked in the following Jupyter Notebook:
+
+EDA NOTEBOOK
 
 ### 4. Feature Engineering
 
+<!-- All variables that are going to be used in the ML model need to be prepared for that task. Here, any new variables relevant for the problem might be created. Also, a first feature selection is carried out. Finally, different class balancing methods can be evaluated to check whether they're necessary or not. -->
+
+New predictive variables are created in this section in order to make the ML model be more accurate.
+
+Feature Engineering can be checked in the following Jupyter Notebook:
+
+Feature Engineering NOTEBOOK
 
 ### 5. Feature selection
 
 
 ### 6. Model development and evaluation
 
+The goal is to check that the model development and evaluation 
+
 
 ### 7. Prepare production scripts
 
+This Notebook aims to make sure that the whole pipeline works correctly before encapsulating everything on the final Python Script. 
+
+Production preparing NOTEBOOK
 
 ### 8. Final product 
 
+The final product is here. The production Python Script is short and simple, requiring another script with built-in functions that contain all the data pipeline to execute the forecasting model.
+
+Also, another Python Script for retraining the ML model with more data in the future is ready to be used by the business in case they want to keep improving the model over time.
+
+Production script 
+
+Functions script
+
+Retraining script
 
 ## BONUS: Lessons learnt
 
