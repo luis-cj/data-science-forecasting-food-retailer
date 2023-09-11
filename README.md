@@ -1,7 +1,7 @@
 # Data science project: Forecasting Food Retailer
 Data science project to forecast retail sales from a large grocery chain using a multi-step forecasting Machine Learning algorithm.
 
-This is a **Machine Learning project**, where the main goal is to develope a machine learning model able to run in batch mode, API or Web App for further model explotation in a real business scenario. It includes data cleaning process, exploratory data analysis, feature engineering, ML modeling and retraining and deployment code.
+This is a **Machine Learning (ML) project**, where the main goal is to develope a machine learning model able to run in batch mode, API or Web App for further model explotation in a real business scenario. It includes data cleaning process, exploratory data analysis, feature engineering, ML modeling and retraining and deployment code.
 
 All the project is carried out using Jupyter Notebooks and Python scripts.
 
@@ -14,18 +14,25 @@ The business managers have outsourced this project to a data scientist to delive
   <img width="480" height="270" src="https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/images/grocery_store_gif.gif">
 </p>
 
-As a starting point, a SQL database is provided containing 3 years of selling records for each product and store.
 
 ## Methodology
 
-### 1. Objective
+It is required to deliver a final product to the business owners that is capable of predicting sales for each product on each store for 8 days in advanced. In order to do that, the most efficient way is to establish a methodology that allows us to carefully collect the data, clean the data and create an ML model (among other steps) before releasing the final product.
 
-Develope a multi-step forecasting Machine Learning model that can predict sales for each product on each store within the next following 8 days from the data collection.
+This methodology and all the steps involved in it are run in Python Jupyter Notebooks. Then, the final product is the summary of all the necessary steps in a single Python Script ready to be thrown into production mode for further explotation of the ML model.
 
+These steps are defined under this section with the link to their respectives Jupyter Notebooks
+
+
+
+### 1. Objectives
+
+- Develope a multi-step forecasting ML model that can predict sales for each product on each store within the next following 8 days from the data collection. 
+- Create a Python script so the ML model can be automatically run in batch mode, API or web app for further explotation and real use in the company.
 
 ### 2. Data collection and setup
 
-Data is provided in a SQL database provided by the business owners.
+As a starting point, a SQL database is provided containing 3 years of selling records for each product and store. Data is provided by the business owners.
 
 Three different datasets are provided, corresponding to:
 
