@@ -52,7 +52,7 @@ This part involves checking data types and general data quality. The main steps 
 
 Data cleaning can be checked in the following Jupyter Notebook:
 
-Data cleaning NOTEBOOK
+[Data cleaning](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/notebooks/02_DataCleaning.ipynb)
 
 ### 3. Exploratory Data Analysis (EDA)
 
@@ -60,7 +60,7 @@ A statistical and graphical analysis of the data allows further understanding of
 
 EDA can be checked in the following Jupyter Notebook:
 
-EDA NOTEBOOK
+[EDA](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/notebooks/03_EDA.ipynb)
 
 ### 4. Feature Engineering
 
