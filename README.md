@@ -70,7 +70,7 @@ New predictive variables are created in this section in order to make the ML mod
 
 Feature Engineering can be checked in the following Jupyter Notebook:
 
-Feature Engineering NOTEBOOK
+[Feature Engineering](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/notebooks/04_Feature%Engineering.ipynb)
 
 ### 5. Feature selection
 
