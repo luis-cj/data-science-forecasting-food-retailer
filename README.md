@@ -85,7 +85,7 @@ Feature Selection can be checked in the following Jupyter Notebook:
 
 The goal is to check that the model development and evaluation 
 
-Feature Selection can be checked in the following Jupyter Notebook:
+Modelling can be checked in the following Jupyter Notebook:
 
 [Modelling](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/notebooks/06_Modelling.ipynb)
 
