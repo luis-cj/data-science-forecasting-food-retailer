@@ -79,7 +79,7 @@ In this project this Feature Selection section does not consist of selecting the
 
 Feature Selection can be checked in the following Jupyter Notebook:
 
-[Feature Selection](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/notebooks/05_Feature%selecion.ipynb)
+[Feature Selection](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/notebooks/05_Feature%20selecion.ipynb)
 
 ### 6. Modelling
 
