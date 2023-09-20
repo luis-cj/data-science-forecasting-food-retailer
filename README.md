@@ -79,12 +79,15 @@ In this project this Feature Selection section does not consist of selecting the
 
 Feature Selection can be checked in the following Jupyter Notebook:
 
-[Feature Selection](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/notebooks/04_Feature%selection.ipynb)
+[Feature Selection](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/notebooks/05_Feature%selecion.ipynb)
 
-### 6. Model development and evaluation
+### 6. Modelling
 
 The goal is to check that the model development and evaluation 
 
+Feature Selection can be checked in the following Jupyter Notebook:
+
+[Modelling](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/notebooks/06_Modelling.ipynb)
 
 ### 7. Prepare production scripts
 
