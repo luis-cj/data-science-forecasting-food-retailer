@@ -72,8 +72,14 @@ Feature Engineering can be checked in the following Jupyter Notebook:
 
 [Feature Engineering](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/notebooks/04_Feature%Engineering.ipynb)
 
-### 5. Feature selection
+### 5. Feature Selection
 
+
+In this project this Feature Selection section does not consist of selecting the final variables that will be included during the modelling part. It is used to check what is the most suitable feature selection method and to have an idea of the number of variables that can get selected for a model.
+
+Feature Selection can be checked in the following Jupyter Notebook:
+
+[Feature Selection](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/notebooks/04_Feature%selection.ipynb)
 
 ### 6. Model development and evaluation
 
