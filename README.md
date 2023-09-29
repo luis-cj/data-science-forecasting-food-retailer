@@ -83,13 +83,13 @@ Feature Selection can be checked in the following Jupyter Notebook:
 
 ### 6. Modelling
 
-The goal is to check that the model development and evaluation 
+The goal is to check that the model development and evaluation is carried out successfully in order to be automated for production in phase 7 (Model Deployment).
 
 Modelling can be checked in the following Jupyter Notebook:
 
 [Modelling](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/notebooks/06_Modelling.ipynb)
 
-### 7. Model deployment
+### 7. Model Deployment
 
 This final phase aims to deliver a simple, easy-to-use production code that calls a pipeline object able to process any new dataset and complete all the tasks done through the entire project (data cleaning, transformation and final use of the selected optimized machine learning algorithm for each product and store).
 
