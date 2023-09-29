@@ -89,23 +89,20 @@ Modelling can be checked in the following Jupyter Notebook:
 
 [Modelling](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/notebooks/06_Modelling.ipynb)
 
-### 7. Prepare production scripts
+### 7. Model deployment
 
-This Notebook aims to make sure that the whole pipeline works correctly before encapsulating everything on the final Python Script. 
+This final phase aims to deliver a simple, easy-to-use production code that calls a pipeline object able to process any new dataset and complete all the tasks done through the entire project (data cleaning, transformation and final use of the selected optimized machine learning algorithm for each product and store).
 
-Production preparing NOTEBOOK
+This part includes:
 
-### 8. Final product 
+- Pre-production code: building the pipelines for the final deployment/execution code. The goal is to generate a Python Script with all the functions defined during this pre-production code (written in a Jupyter Notebook format).
 
-The final product is here. The production Python Script is short and simple, requiring another script with built-in functions that contain all the data pipeline to execute the forecasting model.
+- Re-training code: to keep the model up to date by training it again after a certain period of time. It is ready to be used by the business in case they want to keep improving the model.
 
-Also, another Python Script for retraining the ML model with more data in the future is ready to be used by the business in case they want to keep improving the model over time.
+- Deployment code: it makes use of the pipelines built during the pre-production phase. This is a Python Script that allows all the models to be executed in a batch process, API or web app. Short and simple script that requires another script with built-in functions that contain all the data pipeline (the pre-production code functions).
 
-Production script 
+Model deployment can be checked in the following Jupyter Notebooks:
 
-Functions script
-
-Retraining script
 
 ## BONUS: Lessons learnt
 
