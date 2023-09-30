@@ -91,19 +91,32 @@ Modelling can be checked in the following Jupyter Notebook:
 
 ### 7. Model Deployment
 
-This final phase aims to deliver a simple, easy-to-use production code that calls a pipeline object able to process any new dataset and complete all the tasks done through the entire project (data cleaning, transformation and final use of the selected optimized machine learning algorithm for each product and store).
+This final phase aims to deliver a simple, easy-to-use production code that calls different functions able to process any new dataset and complete all the tasks done through the entire project (data cleaning, transformation and final use of the selected optimized machine learning algorithm for each product and store).
 
 This part includes:
 
-- Pre-production code: building the pipelines for the final deployment/execution code. The goal is to generate a Python Script with all the functions defined during this pre-production code (written in a Jupyter Notebook format).
+- **Pre-production code setup**: building the functions for the final deployment/execution code. The goal is to generate a Python Script with all the functions defined during this pre-production code (written in a Jupyter Notebook format).
 
-- Re-training code: to keep the model up to date by training it again after a certain period of time. It is ready to be used by the business in case they want to keep improving the model.
+- **Re-training code**: to keep the model up to date by training it again after a certain period of time. It is ready to be used by the business in case they want to keep improving the model.
 
-- Deployment code: it makes use of the pipelines built during the pre-production phase. This is a Python Script that allows all the models to be executed in a batch process, API or web app. Short and simple script that requires another script with built-in functions that contain all the data pipeline (the pre-production code functions).
+- **Deployment code**: it makes use of the functions built during the pre-production phase. This is a Python Script that allows all the models to be executed in a batch process, API or web app. Short and simple script that requires another script with built-in functions that contain all the data pipeline (the pre-production code functions).
 
-Model deployment can be checked in the following Jupyter Notebooks:
+Model deployment can be checked in the following Jupyter Notebooks and Python Scripts:
 
+[Pre-production code setup notebook](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/notebooks/07_Production%20code%20setup.ipynb)
+
+[Functions to be used during model deployment](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/python_scripts/functions_retail.py)
+
+[Model re-training code](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/python_scripts/retraining_code.py)
+
+[Model deployment code (Python script to be run in a batch process, API or web app)](https://github.com/luis-cj/data-science-forecasting-food-retailer/blob/main/python_scripts/execution_code.py)
 
 ## BONUS: Lessons learnt
 
+- **Intermittent demand can be modelled**: in retail forecasting it is usual to find periods of time of no sales. And that might mean that there's a stock outage or simply that a product is only sold during certain seasons. But that can reduce the performance of an forecasting model. In order to take into account for all that, new variables can be included in the model such as stock outage, lags, or moving windows. Also, adding information about the inventory can be helpful as well.
 
+- **Hierarchical forecasting needs to be solved (reconciliation problem)**: when solving forecasting problems in retail the data is usually divided into multiple levels of aggregation. In this case, it is aggregated by category, sub-category and product. When making predictions, the final result will depend on the aggregation level we are modelling, since the results are not going to match. It is necessary to make predictions at one aggregation level, and then make sure the predictions make sense at all the aggregation levels. In this case, a bottom-up approach could be applied, where we have predictions at product level and then we could just simply aggregate the predictions at category level. It's very simple. However, it is less reliable than modelling at category level (top-down approach) (in this way there is more data for the model, so more patterns can be learnt and eventually end up with better predictions). 
+
+- **Big data modelling needs to be efficient**: there can be tens, hundreds and thousands of categories or products to be modelled in retail forecasting. Then, it is necessary to use fast ML models (in this case LightGBM worked very well).
+
+- **Multi-step forecasting is necessary to predict into the future (more than 1 day ahead)**: from a business perspective it is not very useful to be able to predict only 1 day ahead. In this case we forecasted for a week ahead. And traditional forecasting methods can handle that automatically, but it is not the case of ML models since they need all the records available to make the predictions. Here appears the multi-step forecasting methodology. There are 2 ways to do it. First, different models can be developed to solve for different time frames in the future (which would be called direct modelling). The second way is to do recursive forecasting, where a single ML model is used to predict the same amount of time in the future (only 1 day ahead). With recursive forecasting the model predicts 1 day ahead of all the available data, and then uses these new data to make the forecasting for the following day, and so on. This way is easier to maintain in real projects.
